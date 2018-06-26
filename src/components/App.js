@@ -5,9 +5,14 @@ import Inventory from './Inventory';
 import sampleFishes from '../sample-fishes';
 import Fish from './Fish';
 import base from '../base';
+import PropTypes from 'prop-types';
 
 class App extends React.Component {
 	
+	static propTypes = {
+		match: PropTypes.object
+	};
+
 	state = {
 		fishes: {},
 		order: {}
