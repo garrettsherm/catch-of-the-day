@@ -10,6 +10,14 @@ Clone this repo into your working directory.
 
 Run 'npm install' to install project. 
 
+Sign up for Firebase. 
+
+Change the apiKey, authDomain, and databaseURL parameters in '/src/base.js' to match your Firebase project. 
+
+Enable Github authentication in Firebase.
+
+Copy contents of '/security-rules.json' into the Firebase database rules. 
+
 Run 'npm start' to start application. 
 
 Application will be running on localhost:3000.
