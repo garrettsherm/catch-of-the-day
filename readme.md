@@ -2,6 +2,10 @@
 
 Course website can be found here https://reactforbeginners.com/, Wes' code for the course can be found https://github.com/wesbos/React-For-Beginners-Starter-Files.
 
+## Following along with Wes Bos' React Course
+
+See the project deployed to now here https://cotd-nfshbnbsio.now.sh
+
 ## Installation
 
 Make sure that you have the latest stable versions of node.js and npm installed on your machine.
