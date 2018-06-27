@@ -2,7 +2,9 @@
 
 Course website can be found here https://reactforbeginners.com/, Wes' code for the course can be found https://github.com/wesbos/React-For-Beginners-Starter-Files.
 
-## Following along with Wes Bos' React Course
+Catch of the day is a single page web application built using React & Firebase.
+
+## Demo
 
 See the project deployed to now here https://cotd-nfshbnbsio.now.sh
 
@@ -28,4 +30,4 @@ Application will be running on localhost:3000.
 
 ## Disclaimer
 
-I do not own any of the images/fonts/assets that have been included. The project was started from the starter files given here https://github.com/wesbos/React-For-Beginners-Starter-Files.
+I do not own any of the images/fonts/assets that have been included. The project was created from the starter files given here https://github.com/wesbos/React-For-Beginners-Starter-Files.
