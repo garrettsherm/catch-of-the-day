@@ -4,9 +4,11 @@ Course website can be found here https://reactforbeginners.com/, Wes' code for t
 
 Catch of the day is a single page web application built using React & Firebase.
 
+Using HashRouter instead of BrowserRouter. 
+
 ## Demo
 
-See the project deployed to now here https://cotd-nfshbnbsio.now.sh
+See the project deployed to now here https://cotd-nfshbnbsio.now.sh (Free hosting is slow, please be patient).
 
 ## Installation
 
