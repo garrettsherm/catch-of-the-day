@@ -26,7 +26,7 @@ Enable Github authentication in Firebase.
 
 Copy contents of '/security-rules.json' into the Firebase database rules. 
 
-Run 'npm start' to start application. 
+Run 'npm run dev' to start application. 
 
 Application will be running on localhost:3000.
 
