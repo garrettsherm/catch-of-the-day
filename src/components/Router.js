@@ -5,13 +5,13 @@ import App from './App';
 import NotFound from './NotFound';
 
 const Router = () => (
-	<HashRouter>
+	<BrowserRouter>
 		<Switch>
 			<Route exact path="/" component={StorePicker} />
 			<Route path="/store/:storeId" component={App} />
 			<Route component={NotFound} />
 		</Switch>
-	</HashRouter>
+	</BrowserRouter>
 );
 
 export default Router;
