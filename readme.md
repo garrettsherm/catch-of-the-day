@@ -8,7 +8,7 @@ Using HashRouter instead of BrowserRouter.
 
 ## Demo
 
-See the project deployed to now here https://cotd-nfshbnbsio.now.sh (Free hosting is slow, please be patient).
+See the project deployed to heroku here https://catch-of-the-day-garrettsherm.herokuapp.com (Free hosting is slow, please be patient).
 
 ## Installation
 
