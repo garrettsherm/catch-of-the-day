@@ -1,16 +1,21 @@
+//Node Modules
 import React from 'react';
-import { formatPrice } from '../helpers'; 
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import PropTypes from 'prop-types';
 
+//Helper functions
+import { formatPrice } from '../helpers'; 
+
 class Order extends React.Component {
 	
+//List of props given to component	
 	static propTypes = {
-		fishes: PropTypes.object,
-		order: PropTypes.object,
-		removeFromOrder: PropTypes.func
+		fishes: PropTypes.object.isRequired,
+		order: PropTypes.object.isRequired,
+		removeFromOrder: PropTypes.func.isRequired
 	};
 
+	//Function to return 
 	renderOrder = key => {
 		const fish = this.props.fishes[key];
 		const count = this.props.order[key];
@@ -20,8 +25,13 @@ class Order extends React.Component {
 			timeout: { enter: 500, exit: 500 }
 		};
 
+		//check if fish exists & if fish is available
 		const isAvailable = fish && fish.status === 'available';
+		
+		//if fish not exists then return nothing
 		if(!fish) return null;
+
+		//if fish not available
 		if(!isAvailable){
 			return (
 				<CSSTransition { ...transitionOptions } >
@@ -31,6 +41,8 @@ class Order extends React.Component {
 				</CSSTransition>
 			);
 		}
+
+		//else return the fish to order
 		return (
 			<CSSTransition { ...transitionOptions } >
 				<li key={key}>
@@ -51,7 +63,10 @@ class Order extends React.Component {
 	};
 
 	render() {
+		//Get all orders
 		const orderIds = Object.keys(this.props.order);
+		
+		//calculate totals from orders
 		const total = orderIds.reduce((prevTotal, key) => {
 			const fish = this.props.fishes[key];
 			const count = this.props.order[key];

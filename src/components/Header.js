@@ -1,9 +1,11 @@
+// Node Modules
 import React from 'react';
 import PropTypes from "prop-types";
 
 
 
-// implicit return
+// Functional stateless component
+// Header for the /store/storeid page
 const Header = props => (
 	<header className="top">
 		<h1>
@@ -20,6 +22,8 @@ const Header = props => (
 	</header>
 );
 
+// Proptypes outside of functional component scope
+// List of props given to component
 Header.propTypes ={
 	tagline: PropTypes.string.isRequired
 };

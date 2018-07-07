@@ -1,3 +1,6 @@
+// Helper functions created by Wes Bos
+
+// Format price to $0.00 format
 export function formatPrice(cents) {
   return (cents / 100).toLocaleString("en-US", {
     style: "currency",
@@ -5,10 +8,13 @@ export function formatPrice(cents) {
   });
 }
 
+//Choose random item in array
+//Used for creating random store names
 export function rando(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
+//Create slug from text
 export function slugify(text) {
   return text
     .toString()
@@ -20,6 +26,8 @@ export function slugify(text) {
     .replace(/-+$/, "");
 }
 
+
+//Get random store name in form of 'adjective-adjective-noun'
 export function getFunName() {
   const adjectives = [
     "adorable",

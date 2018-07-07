@@ -1,19 +1,25 @@
+// Node Modules
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// Component for adding a new fish to application
 class AddFishForm extends React.Component {
 	
+	// List of props given to component
+	static propTypes = {
+		addFish: PropTypes.func
+	};
+
+	// Refs to get DOM info from form
 	nameRef = React.createRef();
 	priceRef = React.createRef();
 	statusRef = React.createRef();
 	descRef = React.createRef();
 	imageRef = React.createRef();
 
-	static propTypes = {
-		addFish: PropTypes.func
-	};
-
+	// Create fish on click
 	createFish = (e) => {
+		//dont refresh page on click
 		e.preventDefault();
 		const fish = {
 			name: this.nameRef.value.value,
@@ -23,6 +29,7 @@ class AddFishForm extends React.Component {
 			image: this.imageRef.value.value,
 		}
 		this.props.addFish(fish);
+		//reset form
 		e.currentTarget.reset();
 	}
 

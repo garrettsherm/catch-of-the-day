@@ -1,14 +1,16 @@
-import React, { Fragment } from 'react';
-import { getFunName } from '../helpers';
+//Node Modules
+import React from 'react';
 import PropTypes from 'prop-types';
 
+//Helper functions
+import { getFunName } from '../helpers';
 
+// StorePicker Component for choosing which store to edit/order from
 class StorePicker extends React.Component {
 	
-	myInput = React.createRef();
-
+	//List of props given to component
 	static propTypes = {
-		history: PropTypes.object
+		history: PropTypes.object.isRequired
 	};
 
 	/*
@@ -16,12 +18,17 @@ class StorePicker extends React.Component {
 	constructor(){
 		super();
 		this.goToStore = this.goToStore.bind(this);	
+		this.myInput = React.createRef();
 	}
 	*/
 
-	//alternative to constuctor
+	//alternative to constructor, dont need to this.input = React.createRef()
+	//create ref for store name input
+	myInput = React.createRef();
 
-
+	//alternative to constuctor, dont need to this.function = this.function.bind(this)
+	//Function to go to /store/storeName, push url to browser history
+	//history prop from router 
 	goToStore = event => {
 		event.preventDefault();
 		const storeName = this.myInput.value.value;
@@ -31,7 +38,6 @@ class StorePicker extends React.Component {
 	render(){
 		return (
 				<form className="store-selector" onSubmit={this.goToStore}>
-					{ /*comment*/ }
 					<h2>Please Enter A Store</h2>
 					<input 
 						ref={this.myInput}
