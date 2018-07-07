@@ -30,6 +30,12 @@ Run 'npm run dev' to start application.
 
 Application will be running on localhost:3000.
 
+## Build for deployment
+
+Run 'npm run build', which will create a production build in the './build' folder.
+
+Run 'npm start' to serve static files on localhost:5000.
+
 ## Disclaimer
 
 I do not own any of the images/fonts/assets that have been included. The project was created from the starter files given here https://github.com/wesbos/React-For-Beginners-Starter-Files.
